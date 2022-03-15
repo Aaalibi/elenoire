@@ -3,15 +3,35 @@
     <title>Elenoire Ferruzzi</title>
 </head>
 <body>
-
+<!--
     <iframe src="audio/250-milliseconds-of-silence.mp3" allow="autoplay" style="display:none" id="iframeAudio">
     </iframe> 
     
     <iframe src="audio/source.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+    -->
+    <button onclick="play()" type="button">playbutton</button>
+    <button onclick="stop()" type="button">stopbutton</button>
+
+    <audio id="audioID" autoplay loop> <source src="audio/source.mp3"  type="audio/mp3"> 
+    </audio>
+
+    <script>
+    var myaudio = document.getElementById("audioID");
+
+    function play() { 
+    return myaudio.play(); 
+    };
+
+    function stop() {
+    return myaudio.pause(); 
+    };
+    </script>
     
-    <audio autoplay loop  id="playAudio">
+<!--    <audio autoplay loop  id="playAudio">
         <source src="audio/source.mp3">
     </audio>
+-->    
+
     <img src="images/elenoire-ferruzzi-1200.jpg">
     <p>Se sei arrivato/a fin qui scrivimi su Telegram: @Aaalibi1 o discord: Aaalibi#6285</p>
 
